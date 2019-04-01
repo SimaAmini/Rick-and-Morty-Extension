@@ -1,0 +1,68 @@
+@import "https://fonts.googleapis.com/css?family=Baloo+Chettan";
+:root {
+  --four: #3f5d95;
+  --one: #ff90aa;
+  --three: #fdc8c8;
+  --two: #faf5f2;
+}
+
+body {
+  margin: 0;
+  font-family: "Baloo Chettan", cursive;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  width: 350px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  font-size: 1.2rem;
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--two);
+  border-radius: 50px;
+  color: var(--four);
+}
+.new-quote {
+  color: var(--three);
+  border-bottom: 1px solid var(--three);
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  float: right;
+}
+.new-quote:hover {
+  color: var(--one);
+  border-bottom: 1px solid var(--one);
+}
+.character {
+  color: var(--one);
+}
+body {
+  background-color: var(--four);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 200px;
+  grid-template-areas:
+    ". a a b"
+    ". a a ."
+    ". a a .";
+}
+.info {
+  grid-area: b;
+  padding: 5%;
+  place-self: start end;
+  color: var(--one);
+}
+#github-icon {
+  fill: var(--three);
+}
+#github-icon:hover {
+  fill: var(--one);
+}

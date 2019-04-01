@@ -1,0 +1,12 @@
+{
+  "short_name": "Rick and Morty Quotes",
+  "name": "Rick and Morty Quotes",
+  "manifest_version": 2,
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "browser_action": {
+    "default_title": "Rick and Morty Quotes"
+  },
+  "version": "1.0"
+}
