@@ -1,0 +1,1 @@
+# Rick-and-Morty-Quotes-Chrome-Extension-NewTab
